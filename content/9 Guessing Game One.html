@@ -133,9 +133,51 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">CMSiMDE 程式架構 << <a href='CMSiMDE 程式架構.html'>Previous</a> <a href='如何建立 CMSiMDE 子模組.html'>Next</a> >> 如何建立 CMSiMDE 子模組<br /><h1>為何需要網際內容管理</h1>
-<p>全球資訊網無遠弗屆, 而且 WWW 的伺服架構相對於手機 APP 對於使用者而言更加友善, 除了允許多重身分無需實名綁定之外, 可以讓工程師進行各種協同設計, 因此若能廣泛利用網際環境建立各種應用程式環境, 將有助提升設計效益.</p>
-<br />CMSiMDE 程式架構 << <a href='CMSiMDE 程式架構.html'>Previous</a> <a href='如何建立 CMSiMDE 子模組.html'>Next</a> >> 如何建立 CMSiMDE 子模組</div>
+    <div id="tipue_search_content">12 List Ends << <a href='12 List Ends.html'>Previous</a> <a href='HW1.html'>Next</a> >> HW1<br /><h1>9 Guessing Game One</h1>
+<h4>Exercise 9 (and Solution)</h4>
+<p>Generate a random number between 1 and 9 (including 1 and 9). Ask the user to guess the number, then tell them whether they guessed too low, too high, or exactly right. (<em>Hint: remember to use the user input lessons from the very<span> first exercise</span></em>)</p>
+<p>Extras:</p>
+<ul>
+<li>Keep the game going until the user types “exit”</li>
+<li>Keep track of how many guesses the user has taken, and when the game ends, print this out.</li>
+</ul>
+<p></p>
+<h4>Discussion</h4>
+<p>Concepts for this week:</p>
+<ul>
+<li>Modules</li>
+<li>Random numbers</li>
+<li>User input</li>
+</ul>
+<h4 id="random-numbers-and-modules">Random Numbers (and Modules)</h4>
+<p>This is your first exposure to using Python code that somebody else wrote. In Python, these formally-distributed code packages are called<span> </span><em>modules</em>. The thing we want from a module in this exercise is the ability to generate random numbers. This comes from the<span> </span><em>random</em><span> </span>module.</p>
+<p>To use a module, at the top of your file, type</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">	<span class="kn">import</span> <span class="nn">random</span></code></pre>
+</figure>
+<p>This means you are allowing your Python program to use a module called<span> </span><code class="highlighter-rouge">random</code><span> </span>in the rest of your code.</p>
+<p>To use it (and generate a random integer), now type:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">	<span class="n">a</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span></code></pre>
+</figure>
+<p>Once you run this program, the variable<span> </span><code class="highlighter-rouge">a</code><span> </span>will have a random integer that the computer made for you, between 2 and 6 (including 2 and 6). The specific documentation for this method is<span> </span><a href="https://docs.python.org/3.3/library/random.html#random.randint">here</a>.</p>
+<p>There are many ways you can generate random numbers - integers, decimals, and much more. The<span> </span><a href="https://docs.python.org/3.3/library/random.html">Python documentation</a><span> </span>has much more detailed information about what is possible from the<span> </span><code class="highlighter-rouge">random</code><span> </span>module.</p>
+<h4 id="user-input">User input</h4>
+<p><span>We covered all you need to know in the </span><a href="https://www.practicepython.org/exercise/2014/01/29/01-character-input.html">first exercise</a><span><span> </span>of this blog!</span></p>
+<h4 id="happy-coding">Happy coding!</h4>
+<p><span>Forgot how to </span><a href="https://www.practicepython.org/about/">submit exercises</a><span>?</span></p>
+<p><span></span></p>
+<p>練習9（和解決方案）<br/>生成1到9之間的隨機數（包括1到9）。讓用戶猜數字，然後告訴他們猜的是太低，太高還是完全正確。 （提示：請記住在第一練習中使用用戶輸入的課程）</p>
+<p>附加功能：</p>
+<p>繼續遊戲，直到用戶鍵入“退出”<br/>跟踪用戶進行了多少猜測，當遊戲結束時，將其打印出來。<br/>討論區<br/>本週的概念：</p>
+<p>模組<br/>隨機數<br/>用戶輸入<br/>隨機數（和模塊）<br/>這是您第一次使用別人編寫的Python代碼。在Python中，這些正式分發的代碼包稱為模塊。在本練習中，我們希望從模塊獲得的是生成隨機數的能力。這來自隨機模塊。</p>
+<p>要使用模塊，請在文件頂部鍵入</p>
+<p>隨機導入<br/>這意味著您將允許Python程序在其餘代碼中使用一個名為random的模塊。</p>
+<p>要使用它（並生成一個隨機整數），現在鍵入：</p>
+<p>a = random.randint（2，6）<br/>一旦運行此程序，變量a將具有計算機為您製作的2到6（包括2到6）之間的隨機整數。此方法的特定文檔在這裡。</p>
+<p>您可以通過多種方式生成隨機數-整數，小數等。 Python文檔提供了有關隨機模塊可能實現的功能的詳細信息。</p>
+<p>用戶輸入<br/>在本博客的第一個練習中，我們介紹了您需要了解的所有信息！</p>
+<p>祝您編碼愉快！<br/>忘記瞭如何提交練習？</p><br />12 List Ends << <a href='12 List Ends.html'>Previous</a> <a href='HW1.html'>Next</a> >> HW1</div>
         
     <!-- footer -->
       <div class="container">
